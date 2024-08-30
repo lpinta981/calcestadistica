@@ -1,0 +1,20 @@
+{
+  "short_name": "APP ESTADÍSTICA",
+  "name": "APP ESTADÍSTICA",
+  "icons": [
+    {
+      "src": "https://images.vexels.com/media/users/3/157446/isolated/preview/383f43305de4fbc3c6a3bdfb25a1b758-icono-de-grafico-de-marketing.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.vexels.com/media/users/3/157446/isolated/preview/383f43305de4fbc3c6a3bdfb25a1b758-icono-de-grafico-de-marketing.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/calcestadistica/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
