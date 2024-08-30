@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP ESTADÍSTICA</title>
+  <!-- Ajustar la ruta para el manifest -->
+  <link rel="manifest" href="/calcestadistica/manifest.json">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbyhlzgYUbtNXVzc-02POZviRc8vxUslPgxgSvRum5TwBu5g_ZNAOZ2Jabg2EUFFBFfM/exec" frameborder="0"></iframe>
+  <script>
+    // Ajustar la ruta para el service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/calcestadistica/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registrado con éxito:', registration);
+      })
+      .catch(error => {
+        console.log('Fallo en el registro del Service Worker:', error);
+      });
+    }
+  </script>
+</body>
+</html>
